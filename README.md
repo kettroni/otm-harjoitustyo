@@ -1,2 +1,5 @@
 # OTM-harjoitustyö
-Tämä sisältää **tietoa** ja *tärkeitä asioita*
+## Tehtävät
+**Viikko1**
+[komentorivi.txt](otm-harjoitustyo/laskarit/viikko1/komentorivi.txt)
+[gitlog.txt](otm-harjoitustyo/laskarit/viikko1/gitlog.txt)
