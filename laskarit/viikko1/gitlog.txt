@@ -1,0 +1,114 @@
+commit 6bab5c62e34e7ad6574d7d6c9b4efa49794311a3 (HEAD -> master)
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:42:56 2018 +0200
+
+    Harjoittelu suoritettu
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 100bacf14bc89949d7a688287ba3f9bb6385ed2c
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:38:16 2018 +0200
+
+    Lisätty hakemisto tiedostoja ja sinne kolme tiedostoa
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 99ce0d9602c69ec1149e22cf04c91a1fc2019085
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:33:31 2018 +0200
+
+    Muutettu eka.txt ja kolmas.txt
+
+ eka.txt    | 2 +-
+ kolmas.txt | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit aa83bdf9b35d6841117ab8b97819cc6137ed9e74
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:30:17 2018 +0200
+
+    tiedosto.txt vaihettu eka.txt
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 59f4b6b3391b9d18ba136ad7c8872d5e8a1b5158
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:22:21 2018 +0200
+
+    toinen.txt poistettu
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 157a949b4375ba75aaae4e42e950729a30dfd051
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:20:50 2018 +0200
+
+    Poistettu osa tekstistä tiedosto.txt
+
+ tiedosto.txt | 44 --------------------------------------------
+ 1 file changed, 44 deletions(-)
+
+commit e7db694e1da561e1dafb957a2c2e71ea7bdfd6c3
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:18:18 2018 +0200
+
+    Lisätty paljon tekstiä tiedosto.txt
+
+ tiedosto.txt | 130 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 129 insertions(+), 1 deletion(-)
+
+commit e1ce10898cba56ed8b86f7c8c1c59ece22c94f78
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:13:12 2018 +0200
+
+    Luotu stuff ja sinne jotain.txt
+
+ stuff/jotain.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b0f69b8b5e5a1851ccf9719ab4b1ec8078db1bab
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:11:39 2018 +0200
+
+    toinen.txt ja kolmas.txt sisältöä muutettu
+
+ kolmas.txt | 1 +
+ toinen.txt | 1 +
+ 2 files changed, 2 insertions(+)
+
+commit a5b5fabc0868b2a1284eff2faed9c65d10fd046e
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:10:03 2018 +0200
+
+    kolmas.txt luotu
+
+ kolmas.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 391bcc564b61e79df7584e086368d27258c2fe4a
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:07:07 2018 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ toinen.txt   | 0
+ 2 files changed, 1 insertion(+)
+
+commit 0c56f851e9f836bb0067caaad9cb002537144e99
+Author: kettroni <ronikettunen96@gmail.com>
+Date:   Mon Mar 19 12:03:58 2018 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+(END)
