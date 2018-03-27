@@ -1,5 +1,6 @@
 # OTM-harjoitustyö 'Seven'
 [Documentation](https://github.com/kettroni/otm-harjoitustyo/tree/master/'Seven'/Documentation)
+[Tuntikirjanpito](https://github.com/kettroni/otm-harjoitustyo/blob/master/'Seven'/Documentation/tuntikirjanpito.md)
 ## Tehtävät
 ### [*Viikko1*](https://github.com/kettroni/otm-harjoitustyo/tree/master/laskarit/viikko1)
 [komentorivi.txt](https://github.com/kettroni/otm-harjoitustyo/blob/master/laskarit/viikko1/komentorivi.txt)  
