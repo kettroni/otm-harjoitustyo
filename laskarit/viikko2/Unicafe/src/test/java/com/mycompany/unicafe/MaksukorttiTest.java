@@ -10,7 +10,7 @@ public class MaksukorttiTest {
 
     @Before
     public void setUp() {
-        kortti = new Maksukortti(10);
+        kortti = new Maksukortti(1000);
     }
 
     @Test
@@ -25,34 +25,34 @@ public class MaksukorttiTest {
     
     @Test
     public void luotuKorttiOikeaAlkusaldo() {
-        assertEquals(10, kortti.saldo());
+        assertEquals(1000, kortti.saldo());
     }
     
     @Test
     public void lataaminenLisaaOikeanMaaran() {
         kortti.lataaRahaa(1);
-        assertEquals(11, kortti.saldo());
+        assertEquals(1001, kortti.saldo());
     }
     
     @Test
     public void ottaminenVahentaaSaldoa() {
         kortti.otaRahaa(5);
-        assertEquals(5, kortti.saldo());
+        assertEquals(995, kortti.saldo());
     }
     
     @Test
     public void saldoEiMuutuJosOtetaanLiikaa() {
-        kortti.otaRahaa(11);
-        assertEquals(10, kortti.saldo());
+        kortti.otaRahaa(1100);
+        assertEquals(1000, kortti.saldo());
     }
     
     @Test
     public void palauttaaTrueJosRiittaa() {
-        assertEquals(true, kortti.otaRahaa(5));
+        assertEquals(true, kortti.otaRahaa(500));
     }
     
     @Test
     public void palauttaaFalseJosEiRiita() {
-        assertEquals(false, kortti.otaRahaa(11));
+        assertEquals(false, kortti.otaRahaa(1100));
     }
 }
