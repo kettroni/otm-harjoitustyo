@@ -27,14 +27,19 @@
                 <version>3.3</version>
                 <configuration>
                     <outputEncoding>UTF-8</outputEncoding>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.0</version>
+                <configuration>
+                    <excludes>
+                        <exclude>main/*</exclude>
+                    </excludes>
+                </configuration> 
                 <executions>
                     <execution>
                         <id>jacoco-initialize</id>
