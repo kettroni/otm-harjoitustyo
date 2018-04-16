@@ -1,6 +1,6 @@
 # OTM-harjoitustyö 'Seven'
-[Documentation](https://github.com/kettroni/otm-harjoitustyo/tree/master/'Seven'/Documentation)  
-[Tuntikirjanpito](https://github.com/kettroni/otm-harjoitustyo/blob/master/'Seven'/Documentation/tuntikirjanpito.md)
+[Documentation](https://github.com/kettroni/otm-harjoitustyo/tree/master/Seven/Documentation)  
+[Tuntikirjanpito](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/tuntikirjanpito.md)
 ## Komentorivitoiminnot
 
 ### Testing
@@ -14,7 +14,7 @@ mvn test
 Test coverage report is done with command:
 
 ```
-mvn jacoco:report
+mvn test jacoco:report
 ```
 
 Test coverage report can be found in _target/site/jacoco/index.html_
