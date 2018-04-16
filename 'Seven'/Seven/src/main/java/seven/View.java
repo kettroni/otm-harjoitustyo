@@ -38,8 +38,7 @@ public class View {
         System.out.println();
         System.out.println();
         System.out.println("Type 1 and 'Enter' to go back to menu");
-        String param = "";
-        param = scanner.nextLine();
+        String param = scanner.nextLine();
         while (!param.equals("1")) {
             System.out.println("Wrong input, type '1' and press 'Enter'");
             param = scanner.nextLine();
