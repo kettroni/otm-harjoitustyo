@@ -89,9 +89,9 @@ public class GameMechanics {
 
     public boolean lose() {
         cause = "            YOU LOST               \n"
-        +   "-----------------------------------\n"
-        +   "You Lost at " + current + ". \n"
-        + "Caused by: " + cause;
+            +   "-----------------------------------\n"
+            +   "You Lost at " + current + ". \n"
+            + "Caused by: " + cause;
         return false;
     }
     
