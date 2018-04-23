@@ -60,7 +60,7 @@ public class GameMechanics {
 
         return true;
     }
-    
+
     public boolean checkIfNotSame(String guess) {
         return !guess.equals(Integer.toString(current));
     }
@@ -87,9 +87,17 @@ public class GameMechanics {
         return set.size() < len;
     }
 
+    /*
+    public String timeOutCause() {
+        return "            YOU LOST               \n"
+                + "-------------------------------\n"
+                + "You Lost at " + current + ". \n"
+                + "Caused by: Timeout (after 2 seconds)";
+    }
+    */
     public boolean lose() {
         cause = "            YOU LOST               \n"
-                + "-----------------------------------\n"
+                + "-------------------------------\n"
                 + "You Lost at " + current + ". \n"
                 + "Caused by: " + cause;
         return false;

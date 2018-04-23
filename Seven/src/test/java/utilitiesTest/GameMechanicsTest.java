@@ -34,9 +34,15 @@ public class GameMechanicsTest {
     }
     
     @Test
-    public void testCheckIfNotSame() {
+    public void testCheckIfNotSameTrue() {
         gameMec = new GameMechanics(1);
         assertTrue(gameMec.checkIfNotSame("2"));
+    }
+    
+    @Test
+    public void testCheckIfNotSameFalse() {
+        gameMec = new GameMechanics(1);
+        assertFalse(gameMec.checkIfNotSame("1"));
     }
 
     @Test
@@ -85,7 +91,7 @@ public class GameMechanicsTest {
         gameMec = new GameMechanics(Integer.parseInt(params));
         gameMec.start(params);
         String cause = "            YOU LOST               \n"
-                + "-----------------------------------\n"
+                + "-------------------------------\n"
                 + "You Lost at " + params + ". \n"
                 + "Caused by: " + "Includes 7";
 
@@ -98,7 +104,7 @@ public class GameMechanicsTest {
         gameMec = new GameMechanics(Integer.parseInt(params));
         gameMec.start(params);
         String cause = "            YOU LOST               \n"
-                + "-----------------------------------\n"
+                + "-------------------------------\n"
                 + "You Lost at " + params + ". \n"
                 + "Caused by: " + "Divisible By 7";
 
@@ -111,7 +117,7 @@ public class GameMechanicsTest {
         gameMec = new GameMechanics(Integer.parseInt(params));
         gameMec.start(params);
         String cause = "            YOU LOST               \n"
-                + "-----------------------------------\n"
+                + "-------------------------------\n"
                 + "You Lost at " + params + ". \n"
                 + "Caused by: " + "Same appears twice";
 
@@ -124,7 +130,7 @@ public class GameMechanicsTest {
         gameMec = new GameMechanics(Integer.parseInt(params));
         gameMec.start("2");
         String cause = "            YOU LOST               \n"
-                + "-----------------------------------\n"
+                + "-------------------------------\n"
                 + "You Lost at " + params + ". \n"
                 + "Caused by: " + "\nYour input was: " + "2" + "\n"
                 + "Expected value was: " + params;
