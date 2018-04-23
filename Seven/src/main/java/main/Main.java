@@ -77,6 +77,7 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+    
     public void iterate(Stage primaryStage, int current, TextField tf) {
         String answer = tf.getText();
         GameMechanics gm = new GameMechanics(current);

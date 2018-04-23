@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package utilities;
+
 import java.util.HashSet;
 
 /**
@@ -15,11 +16,6 @@ public class GameMechanics {
     private int current;
     private boolean no;
     private String cause;
-
-    public GameMechanics() {
-        current = 1;
-        no = false;
-    }
 
     public GameMechanics(int start) {
         current = start;
@@ -53,16 +49,20 @@ public class GameMechanics {
             }
         }
         if (!no) {
-            cause = "\nYour input was: " + guess + "\n"
-                    + "Expected value was: " + current;
-            if (!guess.equals(Integer.toString(current))) {
+            if (checkIfNotSame(guess)) {
+                cause = "\nYour input was: " + guess + "\n"
+                        + "Expected value was: " + current;
                 return lose();
             }
         }
 
         no = false;
-        
+
         return true;
+    }
+    
+    public boolean checkIfNotSame(String guess) {
+        return !guess.equals(Integer.toString(current));
     }
 
     public boolean checkIfNotSkipping(String a) {
@@ -89,12 +89,12 @@ public class GameMechanics {
 
     public boolean lose() {
         cause = "            YOU LOST               \n"
-            +   "-----------------------------------\n"
-            +   "You Lost at " + current + ". \n"
-            + "Caused by: " + cause;
+                + "-----------------------------------\n"
+                + "You Lost at " + current + ". \n"
+                + "Caused by: " + cause;
         return false;
     }
-    
+
     public String getCause() {
         return cause;
     }
