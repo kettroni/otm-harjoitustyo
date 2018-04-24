@@ -7,4 +7,6 @@ Tuntikirjanpito
 
 23.4. : Yhteensä 7 tuntia, 1 tunti: Muokattu kansiorakennetta ja useita testejä lisätty, 6 tuntia: täysin refaktoroitu UI rakenne, siistitty koodia, ulkoasua modifioitu hienommaksi, 'aika moodi' testausvaiheessa (ei toimi vielä oikein, kommentoituna koodissa).
 
-YHTEENSÄ: 23 h
+24.4. : 3,5 tuntia: Pakkausrakenne päivitetty, sekvenssikaavio tehty, release tehty ja github repository siistitty.
+
+YHTEENSÄ: 26,5 h
