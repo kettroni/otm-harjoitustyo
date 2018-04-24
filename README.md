@@ -40,7 +40,7 @@ mvn jxr:jxr checkstyle:checkstyle
 
 ### JavaDoc
 
-JavaDoc is generated in _target/site/apidocs/index.html_  with command
+JavaDoc file is generated in _target/site/apidocs/index.html_  with command
 
 ```
 mvn javadoc:javadoc
