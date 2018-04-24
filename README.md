@@ -1,7 +1,7 @@
 # OTM-harjoitustyö 'Seven'
 [Documentation](https://github.com/kettroni/otm-harjoitustyo/tree/master/Seven/Documentation)  
 [Tuntikirjanpito](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/tuntikirjanpito.md)  
-[Architecture](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/architecture.md)
+[Architecture](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/architecture.md)  
 [Release](https://github.com/kettroni/otm-harjoitustyo/releases)
 ## Command line functions
 
