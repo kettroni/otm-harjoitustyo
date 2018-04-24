@@ -5,6 +5,6 @@ Tuntikirjanpito
 
 16.5. : Yhteensä 10 tuntia, 6 tuntia: Jacoco pluginin kanssa taistelemista, 4 tuntia: JavaFX toimiva käyttöliittymä hieman parannetuilla ominaisuuksilla, uudet testit tehty, ignorattu jacoco testeissä Main luokka, jossa käyttöliittymä, Stylecheck otettu käyttöön, ei toimi vielä mainin ignooraus (tiedostoja muokattu).
 
-23.4. : Yhteensä 7 tuntia, 1 tunti: Muokattu kansiorakennetta ja useita testejä lisätty, 6 tuntia: täysin refaktoroitu UI rakenne, siistitty koodia, 'aika moodi' testausvaiheessa (ei toimi vielä oikein, kommentoituna koodissa).
+23.4. : Yhteensä 7 tuntia, 1 tunti: Muokattu kansiorakennetta ja useita testejä lisätty, 6 tuntia: täysin refaktoroitu UI rakenne, siistitty koodia, ulkoasua modifioitu hienommaksi, 'aika moodi' testausvaiheessa (ei toimi vielä oikein, kommentoituna koodissa).
 
 YHTEENSÄ: 23 h
