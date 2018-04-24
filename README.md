@@ -28,7 +28,7 @@ Done with command
 mvn package
 ```
 
-generates _OtmTodoApp-1.0-SNAPSHOT.jar_ file to _target_ repository
+generates _Seven-1.0-SNAPSHOT.jar_ file to _target_ repository
 
 ### CheckStyle
 
@@ -38,14 +38,10 @@ CheckStyle file is generated in _target/site/checkstyle.html_ with command
 mvn jxr:jxr checkstyle:checkstyle
 ```
 
-JavaDoc file is located in _target/site/apidocs/index.html_
-
 ### JavaDoc
 
-JavaDoc is generated with command
+JavaDoc is generated in _target/site/apidocs/index.html_  with command
 
 ```
 mvn javadoc:javadoc
 ```
-
-JavaDoc file is located in _target/site/apidocs/index.html_
