@@ -2,7 +2,7 @@
 [Documentation](https://github.com/kettroni/otm-harjoitustyo/tree/master/Seven/Documentation)  
 [Tuntikirjanpito](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/tuntikirjanpito.md)  
 [Architecture](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/architecture.md)
-## Komentorivitoiminnot
+## Command line functions
 
 ### Testing
 
@@ -29,6 +29,16 @@ mvn package
 ```
 
 generates _OtmTodoApp-1.0-SNAPSHOT.jar_ file to _target_ repository
+
+### CheckStyle
+
+CheckStyle file is generated in _target/site/checkstyle.html_ with command
+
+```
+mvn jxr:jxr checkstyle:checkstyle
+```
+
+JavaDoc file is located in _target/site/apidocs/index.html_
 
 ### JavaDoc
 
