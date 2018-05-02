@@ -2,7 +2,12 @@
 [Documentation](https://github.com/kettroni/otm-harjoitustyo/tree/master/Seven/Documentation)  
 [Tuntikirjanpito](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/tuntikirjanpito.md)  
 [Architecture](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/architecture.md)  
-[Release](https://github.com/kettroni/otm-harjoitustyo/releases)
+
+
+## Releases
+[Release Week5](https://github.com/kettroni/otm-harjoitustyo/releases/tag/viikko5)  
+[Release Week6](https://github.com/kettroni/otm-harjoitustyo/releases/tag/viikko6)  
+
 ## Command line functions
 
 ### Testing
