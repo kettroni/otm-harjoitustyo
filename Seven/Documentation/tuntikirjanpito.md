@@ -9,4 +9,6 @@ Tuntikirjanpito
 
 24.4. : 3,5 tuntia: Pakkausrakenne päivitetty, sekvenssikaavio tehty, release tehty ja github repository siistitty.
 
-YHTEENSÄ: 26,5 h
+2.5. : 11 tuntia: Pakkausrakenne päivitetty, Tekstitiedostopohjainen tietokanta luotu ja otettu käyttöön sovelluksessa. Testit luotu tietokantakoodille. Tietokantaa käyttävät/muokkaavat näkymät lisätty. Javadoc kommentit tehty viidelle eri luokalle. Viikon 6 vaatimukset täytetty.
+
+YHTEENSÄ: 37,5 h
