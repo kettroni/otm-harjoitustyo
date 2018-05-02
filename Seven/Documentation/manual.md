@@ -42,3 +42,6 @@ When choosing 'Start the game' from menu view.
 Appears after failing in the game.
 
 <img src="https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/Pictures/LoseView.png">
+
+## Quit
+You can close the program by simply closing the window or you can press the 'Quit' button from menu/lose view
