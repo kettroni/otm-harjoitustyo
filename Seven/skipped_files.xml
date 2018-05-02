@@ -10,4 +10,5 @@
     <suppress files="ui.LoseView.java" checks="[a-zA-Z0-9]*"/>
     <suppress files="ui.MenuView.java" checks="[a-zA-Z0-9]*"/>
     <suppress files="ui.GameView.java" checks="[a-zA-Z0-9]*"/>
+    <suppress files="ui.HighscoreView.java" checks="[a-zA-Z0-9]*"/>
 </suppressions>

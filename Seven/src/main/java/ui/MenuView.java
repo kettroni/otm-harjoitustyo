@@ -18,7 +18,8 @@ import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 /**
- *
+ * View which shows all menu options and sets right views with UIController 
+ * which is given to it as a parameter (by calling UIControllers different methods).
  * @author Roni
  */
 public class MenuView extends Application {
@@ -29,11 +30,18 @@ public class MenuView extends Application {
         this.ui = ui;
     }
     
+    /**
+     * Creates all visual JavaFX components and sets the new scene as 
+     * primaryStages scene.  
+     * @param primaryStage
+     * @throws Exception 
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         
         Button option1 = new Button("Start the game");
         Button option2 = new Button("Help");
+        Button highScores = new Button("High scores");
         Button option3 = new Button("Quit");
         Text text = new Text("Seven - The Game");
         option1.setOnAction(e -> {
@@ -50,11 +58,21 @@ public class MenuView extends Application {
                 System.out.println(ex);
             }
         });
+        
+        highScores.setOnAction(e -> {
+            try {
+                ui.showHighScores(primaryStage);
+            } catch (Exception ex) {
+                System.out.println(ex);
+            }
+        });
+        
         option3.setOnAction(e -> primaryStage.close());
         
         GridPane layout = new GridPane();
         option1.setStyle("-fx-pref-width: 230px; -fx-pref-height: 30px");
         option2.setStyle("-fx-pref-width: 230px; -fx-pref-height: 30px");
+        highScores.setStyle("-fx-pref-width: 230px; -fx-pref-height: 30px");
         option3.setStyle("-fx-pref-width: 230px; -fx-pref-height: 30px");
         text.setFont(Font.font ("Verdana", 25));
         text.setUnderline(true);
@@ -72,7 +90,8 @@ public class MenuView extends Application {
         layout.add(text, 0, 0);
         layout.add(option1, 0, 1);
         layout.add(option2, 0, 2);
-        layout.add(option3, 0, 3);
+        layout.add(highScores, 0, 3);
+        layout.add(option3, 0, 4);
         
         layout.setMinSize(500, 500);
         layout.setStyle("-fx-background-color: #383838");
