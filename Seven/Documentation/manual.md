@@ -22,7 +22,7 @@ This is the first view that will pop up.
 <img src="https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/Pictures/MenuView.png">
 
 ## HelpView
-Can be accessed from menu or from lose view.
+Can be accessed from menu view.
 Explains the rules and how the game works.
 
 <img src="https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/Pictures/HelpView.png">
