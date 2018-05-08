@@ -18,7 +18,8 @@ import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 /**
- *
+ * Creates a view which includes Top 3 players from the file LocalData.txt
+ * using the HighscoreData.java class.
  * @author Roni
  */
 public class HighscoreView extends Application {
@@ -29,6 +30,12 @@ public class HighscoreView extends Application {
         this.ui = ui;
     }
 
+    /**
+     * Creates all visual JavaFX components and sets the new scene as 
+     * primaryStages scene.  
+     * @param primaryStage
+     * @throws Exception 
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         Text text = new Text(

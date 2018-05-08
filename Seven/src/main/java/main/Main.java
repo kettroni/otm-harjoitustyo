@@ -21,7 +21,8 @@ import javafx.stage.Stage;
 import ui.UIController;
 
 /**
- *
+ * Main class which sets up the data saving functionality and starts te UI
+ * application.
  * @author Roni
  */
 public class Main extends Application {
@@ -32,6 +33,11 @@ public class Main extends Application {
         launch(args);
     }
 
+    /**
+     * Sets up the data saving properties.
+     * @throws FileNotFoundException
+     * @throws IOException 
+     */
     @Override
     public void init() throws FileNotFoundException, IOException {
         Properties properties = new Properties();

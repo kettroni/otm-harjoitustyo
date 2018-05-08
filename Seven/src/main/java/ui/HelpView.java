@@ -18,7 +18,7 @@ import javafx.scene.text.TextAlignment;
 import javafx.stage.Stage;
 
 /**
- *
+ * View that shows the rules of the game and explains how to play it
  * @author Roni
  */
 public class HelpView extends Application {
@@ -29,6 +29,12 @@ public class HelpView extends Application {
         this.ui = ui;
     }
 
+    /**
+     * Creates all visual JavaFX components and sets the new scene as 
+     * primaryStages scene.  
+     * @param primaryStage
+     * @throws Exception 
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
 
@@ -39,6 +45,7 @@ public class HelpView extends Application {
                 + "           First type 1 and press 'Guess', \n"
                 + "           then proceed with 2 and press\n"
                 + "           'Guess' and so on. \n"
+                + "           Pressing Enter works same as clicking 'Guess'\n"
                 + "\n"
                 + "           There are 'prohibited' numbers \n"
                 + "           which you're not allowed to \n"

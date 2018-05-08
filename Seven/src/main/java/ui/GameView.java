@@ -20,23 +20,29 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 /**
- *
+ * View that takes the user input and processes it (Using GameMechanics.java)
+ * to determine whether game continues or not. 
  * @author Roni
  */
 public class GameView extends Application {
 
     private final UIController ui;
-    private final int b;
+    private final int current;
 
     public GameView(UIController ui, int param) {
         this.ui = ui;
-        b = param;
+        current = param;
     }
 
+    /**
+     * Creates all visual JavaFX components and sets the new scene as 
+     * primaryStages scene.
+     * @param primaryStage
+     * @throws Exception 
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        int current = b;
         VBox text = new VBox();
 
         TextField answer = new TextField();
@@ -65,7 +71,6 @@ public class GameView extends Application {
 
         layout.setVgap(120);
 
-        //adding nodes
         layout.add(adv, 0, 0);
         layout.add(text, 0, 1);
         layout.add(submit, 1, 1);

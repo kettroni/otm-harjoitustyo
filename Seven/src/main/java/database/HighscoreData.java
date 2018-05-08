@@ -19,8 +19,8 @@ import utilities.User;
  */
 
 /**
- * This is used to edit the high score file and has a few
- * methods for analyzing it.
+ * This is used to edit the high score file and to create String type 
+ * reprentations of the data. Also has a few methods for analyzing the data.
  * 
  * @param file   text files content
  *

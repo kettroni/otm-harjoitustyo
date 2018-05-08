@@ -22,7 +22,9 @@ import javafx.stage.Stage;
 import utilities.User;
 
 /**
- *
+ * View that includes: cause why the game was lost, possibility to save your score 
+ * and then goes to HighscoreView, "Try again" -button, "Back to menu" -button
+ * and "Quit" button.
  * @author Roni
  */
 public class LoseView extends Application {
@@ -35,7 +37,12 @@ public class LoseView extends Application {
         this.cause = cause;
         this.score = score;
     }
-    
+    /**
+     * Creates all visual JavaFX components and sets the new scene as 
+     * primaryStages scene.  
+     * @param primaryStage
+     * @throws Exception 
+     */
     @Override
     public void start(Stage primaryStage) throws Exception {
         Button option1 = new Button("Try again");
