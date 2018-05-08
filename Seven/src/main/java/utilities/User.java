@@ -53,4 +53,8 @@ public class User implements Comparable<User> {
     public int compareTo(User t) {
         return (this.highscore - t.getScore());
     }
+    
+    public boolean equals(User t) {
+        return t.getUsername().equals(getUsername());
+    }
 }

@@ -5,10 +5,13 @@ package databaseTest;
  * To change this template content, choose Tools | Templates
  * and open the template in the editor.
  */
-
 import database.HighscoreData;
 import java.io.File;
 import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +27,6 @@ import utilities.User;
 public class HighscoreDataTest {
 
     HighscoreData hs;
-    List<User> users;
     String content;
     File file;
 
@@ -36,15 +38,18 @@ public class HighscoreDataTest {
 
     @Before
     public void setUp() throws IOException {
+        List<String> lines = Arrays.asList("DES;0");
         file = testFolder.newFile("tests.txt");
+        Files.write(file.toPath(), lines, Charset.forName("UTF-8"));
         content = file.toString();
+        System.out.println(content);
         hs = new HighscoreData(content);
-        users = hs.getAll();
     }
 
     @Test
     public void constructTest() {
-        assertEquals(users, hs.getAll());
+        User temp = new User("DES", 0);
+        assertTrue(hs.getAll().get(0).equals(temp));
     }
 
     @Test
@@ -72,7 +77,7 @@ public class HighscoreDataTest {
         hs.create(temp);
         assertEquals(start + 1, hs.getAll().size());
     }
-    
+
     @Test
     public void createDoesntIncreaseIfExists() {
         int start = hs.getAll().size();
@@ -82,7 +87,7 @@ public class HighscoreDataTest {
         hs.create(temp2);
         assertEquals(start + 1, hs.getAll().size());
     }
-    
+
     @Test
     public void createUpdatesScoreIfAlreadyExistsAndNewBigger() {
         hs.create(new User("tes", 12));
