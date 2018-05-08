@@ -1,5 +1,5 @@
 # Manual
-Download the files and follow instructions from [here](https://github.com/kettroni/otm-harjoitustyo/releases/tag/viikko6)  
+First of all download the files and **follow instructions** from [here](https://github.com/kettroni/otm-harjoitustyo/releases/tag/loppupalautus)  
 ## Configuration
 The program doesn't work without the _config.properties_ file in the same file as the executable .jar file, because it defines where to save the data. 
 The file looks like this:
@@ -12,7 +12,7 @@ If you don't have a _LocalData.txt_ file in the same file as the other two files
 ## Starting the program
 Simply use the command
 ```
-java -jar Seven-1.1.jar
+java -jar Seven-1.2.jar
 ```
 
 ## MenuView
