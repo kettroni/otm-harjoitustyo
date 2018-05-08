@@ -11,4 +11,6 @@ Tuntikirjanpito
 
 2.5. : 11,5 tuntia: Pakkausrakenne päivitetty, Tekstitiedostopohjainen tietokanta luotu ja otettu käyttöön sovelluksessa. Testit luotu tietokantakoodille. Tietokantaa käyttävät/muokkaavat näkymät lisätty. Javadoc kommentit tehty viidelle eri luokalle. Viikon 6 vaatimukset täytetty.
 
-YHTEENSÄ: 38 h
+8.5. : 5 tuntia: Lopullista palautusta varten tehdyt muutokset ja lisäykset.
+
+YHTEENSÄ: 43 h
