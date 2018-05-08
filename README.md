@@ -1,6 +1,7 @@
 # OTM-harjoitustyö 'Seven'
-[Manual](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/manual.md)  
-[Documentation](https://github.com/kettroni/otm-harjoitustyo/tree/master/Seven/Documentation)  
+
+## [Documentation](https://github.com/kettroni/otm-harjoitustyo/tree/master/Seven/Documentation) 
+[Manual](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/manual.md)   
 [Tuntikirjanpito](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/tuntikirjanpito.md)  
 [Architecture](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/architecture.md)  
 
