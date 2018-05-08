@@ -7,8 +7,7 @@ The file looks like this:
 scoreFile=LocalData.txt
 ```
 
-If you don't have a _LocalData.txt_ file in the same file as the other two files, the program throws an exception but doesn't crash
-and will make a _LocalData.txt_ file where it should be when adding data to it. (this problem will be fixed for next release.)
+If you don't have a _LocalData.txt_ file in the same file as the other two files, the program throws an java.io.FileNotFoundException but doesn't crash and will make a _LocalData.txt_ file where it should be when adding data to it.
 
 ## Starting the program
 Simply use the command
