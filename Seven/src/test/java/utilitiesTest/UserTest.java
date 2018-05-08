@@ -54,4 +54,11 @@ public class UserTest {
         int smallerThan = user.compareTo(a);
         assertEquals(-122, smallerThan);
     }
+    
+    @Test
+    public void equalsWorksProperly() {
+        User a = new User("a", 123);
+        User b = new User("a", 2);
+        assertTrue(a.equals(b));
+    }
 }
