@@ -1,14 +1,16 @@
 # OTM-harjoitustyö 'Seven'
 
 ## [Documentation](https://github.com/kettroni/otm-harjoitustyo/tree/master/Seven/Documentation) 
-[Manual](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/manual.md)   
-[Tuntikirjanpito](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/tuntikirjanpito.md)  
+[Manual](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/manual.md)  
 [Architecture](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/architecture.md)  
+[Testing](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/testing.md)  
+[Tuntikirjanpito](https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/tuntikirjanpito.md)  
 
 
 ## Releases
 [Release Week5](https://github.com/kettroni/otm-harjoitustyo/releases/tag/viikko5)  
 [Release Week6](https://github.com/kettroni/otm-harjoitustyo/releases/tag/viikko6)  
+[Release _loppupalautus_](https://github.com/kettroni/otm-harjoitustyo/releases/tag/loppupalautus)
 
 ## Command line functions
 
