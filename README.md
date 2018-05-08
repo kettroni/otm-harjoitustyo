@@ -22,7 +22,7 @@ Tests are executed with following command:
 mvn test
 ```
 
-Test coverage report is done with command:
+Test coverage report is created with command:
 
 ```
 mvn test jacoco:report
