@@ -46,3 +46,6 @@ where a single User is in a single line and the two different fields are separat
 
 #### Sequence Diagram, session from menu to playing the game.  
 <img src="https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/Pictures/SequenceDiagram1.png">
+
+#### Sequence Diagram, session from LoseView to Highscore. Storing new data to _LocalData.txt_ file and representing the top 3.
+<img src="https://github.com/kettroni/otm-harjoitustyo/blob/master/Seven/Documentation/Pictures/SequenceDiagram2.png">
