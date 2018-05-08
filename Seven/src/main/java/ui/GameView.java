@@ -5,7 +5,6 @@
  */
 package ui;
 
-import com.sun.glass.events.KeyEvent;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;

@@ -13,23 +13,22 @@ import utilities.GameMechanics;
 
 /**
  * Controls all different views by calling its own different methods.
+ *
  * @author Roni
  */
 public class UIController extends Application {
-    /*
-    This is for future when there will be a time limit, still testing.
-    private boolean timeRanOut;
-    */
+
     public HighscoreData scores;
-    
+
     public UIController(HighscoreData score) {
         scores = score;
     }
-    
+
     /**
      * Initializes the game, calls for menu() method
+     *
      * @param primaryStage
-     * @throws Exception 
+     * @throws Exception
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -39,8 +38,9 @@ public class UIController extends Application {
 
     /**
      * Sets the scene to MenuView
+     *
      * @param primaryStage
-     * @throws Exception 
+     * @throws Exception
      */
     public void menu(Stage primaryStage) throws Exception {
         MenuView menu = new MenuView(this);
@@ -50,10 +50,11 @@ public class UIController extends Application {
     /**
      * Starts the game by setting the scene in to GameView, also passes int a,
      * which is the "current" value in utilities.GameMechanics
+     *
      * @param primaryStage
-     * @param a   the current value in the iteration
+     * @param a the current value in the iteration
      * @see utilities.GameMechanics
-     * @throws Exception 
+     * @throws Exception
      */
     public void startGame(Stage primaryStage, int a) throws Exception {
         GameView gv = new GameView(this, a);
@@ -61,29 +62,24 @@ public class UIController extends Application {
     }
 
     /**
-     * Creates a GameMechanics object and passes the value 'current' and
-     * the users input on the textfield from GameView to GameMechanics object.
-     * This method is called until GameMechanics.start returns false 
-     * (due to incorrect textfield value compared to current).
-     * Then sets view to LoseScreen.
-     * 
+     * Creates a GameMechanics object and passes the value 'current' and the
+     * users input on the textfield from GameView to GameMechanics object. This
+     * method is called until GameMechanics.start returns false (due to
+     * incorrect textfield value compared to current). Then sets view to
+     * LoseScreen.
+     *
      * @param primaryStage
      * @param current
      * @param tf
-     * @throws Exception 
+     * @throws Exception
      */
     public void iterate(Stage primaryStage, int current, TextField tf) throws Exception {
         String answer = tf.getText();
         GameMechanics gm = new GameMechanics(current);
-        /*setTimeout(this, 10000);
-        */
+
         if (gm.start(answer)) {
-            if (/*timeRanOut*/false) {
-                //loseScreen(primaryStage, gm.timeOutCause());
-            } else {
-                current++;
-                startGame(primaryStage, current);
-            }
+            current++;
+            startGame(primaryStage, current);
         } else {
             loseScreen(primaryStage, gm.getCause(), current);
         }
@@ -91,10 +87,11 @@ public class UIController extends Application {
 
     /**
      * Sets scene to LoseView
+     *
      * @param primaryStage
      * @param cause
      * @param current
-     * @throws Exception 
+     * @throws Exception
      */
     public void loseScreen(Stage primaryStage, String cause, int current) throws Exception {
         LoseView lv = new LoseView(this, cause, current);
@@ -103,38 +100,23 @@ public class UIController extends Application {
 
     /**
      * Sets scene to HelpView
+     *
      * @param primaryStage
-     * @throws Exception 
+     * @throws Exception
      */
     public void showHelp(Stage primaryStage) throws Exception {
         HelpView hv = new HelpView(this);
         hv.start(primaryStage);
     }
-    
+
     /**
      * Sets scene to HighscoreView
+     *
      * @param primaryStage
-     * @throws Exception 
+     * @throws Exception
      */
-    public void showHighScores(Stage primaryStage) throws Exception{
+    public void showHighScores(Stage primaryStage) throws Exception {
         HighscoreView highV = new HighscoreView(this);
         highV.start(primaryStage);
     }
-
-    /*public void setNoTimeLeft() {
-        timeRanOut = true;
-    }
-
-    public static void setTimeout(UIController ui, int delay) {
-        new Thread(() -> {
-            try {
-                Thread.sleep(delay);
-                ui.setNoTimeLeft();
-            } catch (Exception e) {
-                System.out.println(e);
-            }
-        }).start();
-    }
-    */
-    
 }

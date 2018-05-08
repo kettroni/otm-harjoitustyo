@@ -114,15 +114,6 @@ public class GameMechanics {
         }
         return set.size() < len;
     }
-
-    /*
-    public String timeOutCause() {
-        return "            YOU LOST               \n"
-                + "-------------------------------\n"
-                + "You Lost at " + current + ". \n"
-                + "Caused by: Timeout (after 2 seconds)";
-    }
-    */
     
     /**
      * Sets cause to a specific format and returns false for start method.

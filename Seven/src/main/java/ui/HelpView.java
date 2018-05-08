@@ -22,15 +22,16 @@ import javafx.stage.Stage;
  * @author Roni
  */
 public class HelpView extends Application {
+
     private UIController ui;
-    
+
     public HelpView(UIController ui) {
         this.ui = ui;
     }
-    
+
     @Override
     public void start(Stage primaryStage) throws Exception {
-        
+
         Text text = new Text(
                 "                       Seven - Rules               \n"
                 + "\n"
@@ -68,27 +69,24 @@ public class HelpView extends Application {
                 System.out.println(ex);
             }
         });
-        
+
         GridPane layout = new GridPane();
-        text.setFont(Font.font ("Verdana", 17));
+        text.setFont(Font.font("Verdana", 17));
         text.setFill(Color.RED);
         text.setTextAlignment(TextAlignment.JUSTIFY);
         layout.setPadding(new Insets(10, 10, 10, 10));
         layout.setAlignment(Pos.CENTER);
 
-        //Setting gaps
         layout.setVgap(20);
         layout.setHgap(20);
 
-        //adding nodes
-        
         layout.add(text, 0, 0);
         layout.add(back, 0, 1);
-        
+
         layout.setMinSize(500, 500);
         layout.setStyle("-fx-background-color: #383838");
         Scene scene = new Scene(layout);
         primaryStage.setScene(scene);
     }
-    
+
 }

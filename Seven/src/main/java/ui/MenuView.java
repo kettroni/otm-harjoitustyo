@@ -81,11 +81,8 @@ public class MenuView extends Application {
         layout.setPadding(new Insets(10, 10, 10, 10));
         layout.setAlignment(Pos.CENTER);
 
-        //Setting gaps
         layout.setVgap(20);
         layout.setHgap(20);
-
-        //adding nodes
         
         layout.add(text, 0, 0);
         layout.add(option1, 0, 1);

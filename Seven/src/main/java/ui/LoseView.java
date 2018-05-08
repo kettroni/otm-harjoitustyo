@@ -70,7 +70,7 @@ public class LoseView extends Application {
             try {
                 ui.showHighScores(primaryStage);
             } catch (Exception ex) {
-                Logger.getLogger(LoseView.class.getName()).log(Level.SEVERE, null, ex);
+                System.out.println(ex);
             }
         });
         
@@ -89,7 +89,7 @@ public class LoseView extends Application {
         layout.setAlignment(Pos.BASELINE_CENTER);
         
         layout.setVgap(20);
-        //adding nodes
+
         layout.add(text, 0, 0);
         layout.add(txt, 0, 1);
         layout.add(submit, 0, 2);
